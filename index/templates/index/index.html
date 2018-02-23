@@ -16,8 +16,11 @@
 
 
     {% load static %}
+    {% load compress %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}" />
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'index/css/style.sass' %}" />
+    {% endcompress %}
 
 </head>
 <body>

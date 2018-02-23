@@ -1,4 +1,7 @@
-# Created by https://www.gitignore.io/api/macos,django,python
+/static/
+
+
+# Created by https://www.gitignore.io/api/vim,macos,django,python
 
 ### Django ###
 *.log
@@ -138,5 +141,17 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+### Vim ###
+# swap
+.sw[a-p]
+.*.sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
 
-# End of https://www.gitignore.io/api/macos,django,python
+
+# End of https://www.gitignore.io/api/vim,macos,django,python
