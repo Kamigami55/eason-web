@@ -29,7 +29,24 @@
 
 <body>
   {% include '_navbar.html' %}
-  {% block content %}{% endblock %}
+
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        {% block jumbotron %}
+          <h1 class="display-1 text-center">Hi! I am Eason_</h1>
+        {% endblock %}
+      </div>
+    </div>
+
+    <div class="container">
+      {% block content %}
+        <h1>Welcome to Eason's Playground!</h1>
+      {% endblock %}
+      <hr>
+    </div>
+  </main>
+
   {% include '_footer.html' %}
 </body>
 </html>

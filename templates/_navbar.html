@@ -1,6 +1,6 @@
 {% load activeurl %}
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
   <a class="navbar-brand" href="/">Eason's Playground</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,14 +9,14 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     {% activeurl %}
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item {% if request.resolver_match.url_name == '' %}active{% endif %}">
+        <li class="nav-item">
           <a class="nav-link" href="/">首頁</a>
         </li>
-        <li class="nav-item {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">
-          <a class="nav-link" href="/projects/">部落格</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">部落格</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">專案</a>
+          <a class="nav-link" href="/projects/">專案</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">關於</a>
