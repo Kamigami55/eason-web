@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # community apps
+    'django_activeurl',
     "compressor",
+    # my own apps
     'index',
     'projects',
 ]

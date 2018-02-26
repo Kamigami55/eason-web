@@ -1,6 +1,4 @@
 from django.shortcuts import render
 
-def index(req):
-    return render(req, 'index/index.html', {
-        'title': "Eason's Playground",
-        })
+def index(request):
+    return render(request, 'index/index.html')

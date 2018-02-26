@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
+
+{% block title %}Eason's Playground - Projects{% endblock %}
+
 {% block custom-includes %}
   {% load static %}
   {% load compress %}
 
   {% compress css %}
-    <link rel="stylesheet" type="text/x-scss" href="{% static 'index/css/style.sass' %}" />
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'projects/css/style.sass' %}" />
   {% endcompress %}
 {% endblock %}
 
