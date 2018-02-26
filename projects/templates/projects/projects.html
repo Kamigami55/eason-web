@@ -19,7 +19,7 @@
     {% load compress %}
 
     {% compress css %}
-        <link rel="stylesheet" type="text/x-scss" href="{% static 'index/css/style.sass' %}" />
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'projects/css/style.sass' %}" />
     {% endcompress %}
 
 </head>
@@ -32,10 +32,10 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">首頁 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/projects/">部落格</a>
           </li>
           <li class="nav-item">
